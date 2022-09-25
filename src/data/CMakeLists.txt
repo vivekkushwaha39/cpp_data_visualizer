@@ -1,0 +1,7 @@
+set(TARGET datastructure)
+project(${TARGET})
+file(GLOB SRCS *.cpp)
+add_library(${TARGET} STATIC ${SRCS})
+include_directories()
+target_include_directories(${TARGET} PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
+target_include_directories(${TARGET} PRIVATE ${CMAKE_CURRENT_LIST_DIR})
